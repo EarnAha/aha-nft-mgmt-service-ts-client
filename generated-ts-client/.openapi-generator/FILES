@@ -1,0 +1,15 @@
+.gitignore
+.openapi-generator-ignore
+api.ts
+api/apis.ts
+api/defaultApi.ts
+api/emojiApi.ts
+git_push.sh
+model/emoji.ts
+model/getEmojiRequest.ts
+model/internalServerError.ts
+model/models.ts
+model/resourceNotFoundError.ts
+model/validationError.ts
+package.json
+tsconfig.json

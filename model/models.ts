@@ -1,5 +1,6 @@
 import localVarRequest from 'request';
 
+export * from './accessDeniedError';
 export * from './emoji';
 export * from './getEmojiRequest';
 export * from './internalServerError';
@@ -19,6 +20,7 @@ export interface RequestDetailedFile {
 export type RequestFile = string | Buffer | fs.ReadStream | RequestDetailedFile;
 
 
+import { AccessDeniedError } from './accessDeniedError';
 import { Emoji } from './emoji';
 import { GetEmojiRequest } from './getEmojiRequest';
 import { InternalServerError } from './internalServerError';
@@ -41,6 +43,7 @@ let enumsMap: {[index: string]: any} = {
 }
 
 let typeMap: {[index: string]: any} = {
+    "AccessDeniedError": AccessDeniedError,
     "Emoji": Emoji,
     "GetEmojiRequest": GetEmojiRequest,
     "InternalServerError": InternalServerError,

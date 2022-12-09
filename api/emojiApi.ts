@@ -15,6 +15,7 @@ import localVarRequest from 'request';
 import http from 'http';
 
 /* tslint:disable:no-unused-locals */
+import { AccessDeniedError } from '../model/accessDeniedError';
 import { Emoji } from '../model/emoji';
 import { GetEmojiRequest } from '../model/getEmojiRequest';
 import { InternalServerError } from '../model/internalServerError';
@@ -97,7 +98,7 @@ export class EmojiApi {
     }
 
     /**
-     * This can only be done by the logged in user.
+     * 
      * @summary Create emoji / Update emoji
      * @param emoji 
      */
@@ -169,7 +170,7 @@ export class EmojiApi {
         });
     }
     /**
-     * This can only be done by the logged in user.
+     * 
      * @summary Get emoji
      * @param getEmojiRequest 
      */

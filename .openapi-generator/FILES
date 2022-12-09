@@ -5,6 +5,7 @@ api/apis.ts
 api/defaultApi.ts
 api/emojiApi.ts
 git_push.sh
+model/accessDeniedError.ts
 model/emoji.ts
 model/getEmojiRequest.ts
 model/internalServerError.ts

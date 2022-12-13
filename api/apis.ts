@@ -2,6 +2,8 @@ export * from './defaultApi';
 import { DefaultApi } from './defaultApi';
 export * from './emojiApi';
 import { EmojiApi } from './emojiApi';
+export * from './userApi';
+import { UserApi } from './userApi';
 import * as http from 'http';
 
 export class HttpError extends Error {
@@ -13,4 +15,4 @@ export class HttpError extends Error {
 
 export { RequestFile } from '../model/models';
 
-export const APIS = [DefaultApi, EmojiApi];
+export const APIS = [DefaultApi, EmojiApi, UserApi];

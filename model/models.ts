@@ -1,10 +1,17 @@
 import localVarRequest from 'request';
 
 export * from './accessDeniedError';
+export * from './codeShareSummary';
+export * from './concurrencyError';
+export * from './createUserReq';
 export * from './emoji';
 export * from './getEmojiRequest';
+export * from './getUserRequest';
 export * from './internalServerError';
+export * from './referralSummary';
+export * from './resourceAlreadyExistError';
 export * from './resourceNotFoundError';
+export * from './user';
 export * from './validationError';
 
 import * as fs from 'fs';
@@ -21,10 +28,17 @@ export type RequestFile = string | Buffer | fs.ReadStream | RequestDetailedFile;
 
 
 import { AccessDeniedError } from './accessDeniedError';
+import { CodeShareSummary } from './codeShareSummary';
+import { ConcurrencyError } from './concurrencyError';
+import { CreateUserReq } from './createUserReq';
 import { Emoji } from './emoji';
 import { GetEmojiRequest } from './getEmojiRequest';
+import { GetUserRequest } from './getUserRequest';
 import { InternalServerError } from './internalServerError';
+import { ReferralSummary } from './referralSummary';
+import { ResourceAlreadyExistError } from './resourceAlreadyExistError';
 import { ResourceNotFoundError } from './resourceNotFoundError';
+import { User } from './user';
 import { ValidationError } from './validationError';
 
 /* tslint:disable:no-unused-variable */
@@ -44,10 +58,17 @@ let enumsMap: {[index: string]: any} = {
 
 let typeMap: {[index: string]: any} = {
     "AccessDeniedError": AccessDeniedError,
+    "CodeShareSummary": CodeShareSummary,
+    "ConcurrencyError": ConcurrencyError,
+    "CreateUserReq": CreateUserReq,
     "Emoji": Emoji,
     "GetEmojiRequest": GetEmojiRequest,
+    "GetUserRequest": GetUserRequest,
     "InternalServerError": InternalServerError,
+    "ReferralSummary": ReferralSummary,
+    "ResourceAlreadyExistError": ResourceAlreadyExistError,
     "ResourceNotFoundError": ResourceNotFoundError,
+    "User": User,
     "ValidationError": ValidationError,
 }
 

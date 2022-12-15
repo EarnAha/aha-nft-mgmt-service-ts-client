@@ -2,8 +2,10 @@
 .openapi-generator-ignore
 api.ts
 api/apis.ts
+api/asyncApi.ts
 api/defaultApi.ts
 api/emojiApi.ts
+api/stripeApi.ts
 api/userApi.ts
 git_push.sh
 model/accessDeniedError.ts

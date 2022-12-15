@@ -34,6 +34,7 @@ let defaultBasePath = 'http://localhost';
 // ===============================================
 
 export enum EmojiApiApiKeys {
+    ServerAccessKey,
 }
 
 export class EmojiApi {
@@ -43,7 +44,8 @@ export class EmojiApi {
 
     protected authentications = {
         'default': <Authentication>new VoidAuth(),
-        'bearerAuth': new HttpBearerAuth(),
+        'JWT': new HttpBearerAuth(),
+        'ServerAccessKey': new ApiKeyAuth('header', 'ServerAccessKey'),
     }
 
     protected interceptors: Interceptor[] = [];
@@ -90,7 +92,7 @@ export class EmojiApi {
     }
 
     set accessToken(accessToken: string | (() => string)) {
-        this.authentications.bearerAuth.accessToken = accessToken;
+        this.authentications.JWT.accessToken = accessToken;
     }
 
     public addInterceptor(interceptor: Interceptor) {
@@ -135,8 +137,11 @@ export class EmojiApi {
         };
 
         let authenticationPromise = Promise.resolve();
-        if (this.authentications.bearerAuth.accessToken) {
-            authenticationPromise = authenticationPromise.then(() => this.authentications.bearerAuth.applyToRequest(localVarRequestOptions));
+        if (this.authentications.JWT.accessToken) {
+            authenticationPromise = authenticationPromise.then(() => this.authentications.JWT.applyToRequest(localVarRequestOptions));
+        }
+        if (this.authentications.ServerAccessKey.apiKey) {
+            authenticationPromise = authenticationPromise.then(() => this.authentications.ServerAccessKey.applyToRequest(localVarRequestOptions));
         }
         authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
 
@@ -207,8 +212,11 @@ export class EmojiApi {
         };
 
         let authenticationPromise = Promise.resolve();
-        if (this.authentications.bearerAuth.accessToken) {
-            authenticationPromise = authenticationPromise.then(() => this.authentications.bearerAuth.applyToRequest(localVarRequestOptions));
+        if (this.authentications.JWT.accessToken) {
+            authenticationPromise = authenticationPromise.then(() => this.authentications.JWT.applyToRequest(localVarRequestOptions));
+        }
+        if (this.authentications.ServerAccessKey.apiKey) {
+            authenticationPromise = authenticationPromise.then(() => this.authentications.ServerAccessKey.applyToRequest(localVarRequestOptions));
         }
         authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
 

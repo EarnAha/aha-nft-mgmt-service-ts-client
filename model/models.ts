@@ -3,6 +3,7 @@ import localVarRequest from 'request';
 export * from './accessDeniedError';
 export * from './codeShareSummary';
 export * from './concurrencyError';
+export * from './createCustomerPortalSessionRequest';
 export * from './createUserReq';
 export * from './emoji';
 export * from './getEmojiRequest';
@@ -30,6 +31,7 @@ export type RequestFile = string | Buffer | fs.ReadStream | RequestDetailedFile;
 import { AccessDeniedError } from './accessDeniedError';
 import { CodeShareSummary } from './codeShareSummary';
 import { ConcurrencyError } from './concurrencyError';
+import { CreateCustomerPortalSessionRequest } from './createCustomerPortalSessionRequest';
 import { CreateUserReq } from './createUserReq';
 import { Emoji } from './emoji';
 import { GetEmojiRequest } from './getEmojiRequest';
@@ -60,6 +62,7 @@ let typeMap: {[index: string]: any} = {
     "AccessDeniedError": AccessDeniedError,
     "CodeShareSummary": CodeShareSummary,
     "ConcurrencyError": ConcurrencyError,
+    "CreateCustomerPortalSessionRequest": CreateCustomerPortalSessionRequest,
     "CreateUserReq": CreateUserReq,
     "Emoji": Emoji,
     "GetEmojiRequest": GetEmojiRequest,

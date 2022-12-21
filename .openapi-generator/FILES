@@ -11,6 +11,8 @@ git_push.sh
 model/accessDeniedError.ts
 model/codeShareSummary.ts
 model/concurrencyError.ts
+model/createCheckoutRequest.ts
+model/createCheckoutResponse.ts
 model/createCustomerPortalSessionRequest.ts
 model/createUserReq.ts
 model/emoji.ts

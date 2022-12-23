@@ -15,7 +15,6 @@ import localVarRequest from 'request';
 import http from 'http';
 
 /* tslint:disable:no-unused-locals */
-import { AccessDeniedError } from '../model/accessDeniedError';
 import { InternalServerError } from '../model/internalServerError';
 import { ValidationError } from '../model/validationError';
 
@@ -101,7 +100,7 @@ export class AsyncApi {
      * @summary Process Stripe subscription-related events
      */
     public async processSubscriptionEvent (options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body?: any;  }> {
-        const localVarPath = this.basePath + '/event/ProcessSubscriptionEvent';
+        const localVarPath = this.basePath + '/stripe/event/ProcessSubscriptionEvent';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
         const produces = ['application/json'];

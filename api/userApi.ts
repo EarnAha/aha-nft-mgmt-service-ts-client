@@ -16,7 +16,7 @@ import http from 'http';
 
 /* tslint:disable:no-unused-locals */
 import { ConcurrencyError } from '../model/concurrencyError';
-import { CreateUserReq } from '../model/createUserReq';
+import { CreateUserRequest } from '../model/createUserRequest';
 import { GetUserRequest } from '../model/getUserRequest';
 import { InternalServerError } from '../model/internalServerError';
 import { ResourceAlreadyExistError } from '../model/resourceAlreadyExistError';
@@ -104,9 +104,9 @@ export class UserApi {
     /**
      * This can only be done by the logged in user.
      * @summary Create user
-     * @param createUserReq 
+     * @param createUserRequest 
      */
-    public async createUser (createUserReq: CreateUserReq, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: User;  }> {
+    public async createUser (createUserRequest: CreateUserRequest, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: User;  }> {
         const localVarPath = this.basePath + '/user/CreateUser';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
@@ -119,9 +119,9 @@ export class UserApi {
         }
         let localVarFormParams: any = {};
 
-        // verify required parameter 'createUserReq' is not null or undefined
-        if (createUserReq === null || createUserReq === undefined) {
-            throw new Error('Required parameter createUserReq was null or undefined when calling createUser.');
+        // verify required parameter 'createUserRequest' is not null or undefined
+        if (createUserRequest === null || createUserRequest === undefined) {
+            throw new Error('Required parameter createUserRequest was null or undefined when calling createUser.');
         }
 
         (<any>Object).assign(localVarHeaderParams, options.headers);
@@ -135,7 +135,7 @@ export class UserApi {
             uri: localVarPath,
             useQuerystring: this._useQuerystring,
             json: true,
-            body: ObjectSerializer.serialize(createUserReq, "CreateUserReq")
+            body: ObjectSerializer.serialize(createUserRequest, "CreateUserRequest")
         };
 
         let authenticationPromise = Promise.resolve();

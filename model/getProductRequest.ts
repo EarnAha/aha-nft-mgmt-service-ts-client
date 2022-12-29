@@ -12,38 +12,23 @@
 
 import { RequestFile } from './models';
 
-export class CreateCheckoutRequest {
-    /**
-    * Stringified UUIDv4. See [RFC 4112](https://tools.ietf.org/html/rfc4122)
-    */
-    'userId': string;
+export class GetProductRequest {
     /**
     * Stripe Product Id.
     */
     'productId': string;
-    'promoCodeId'?: string;
 
     static discriminator: string | undefined = undefined;
 
     static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
         {
-            "name": "userId",
-            "baseName": "userId",
-            "type": "string"
-        },
-        {
             "name": "productId",
             "baseName": "productId",
-            "type": "string"
-        },
-        {
-            "name": "promoCodeId",
-            "baseName": "promoCodeId",
             "type": "string"
         }    ];
 
     static getAttributeTypeMap() {
-        return CreateCheckoutRequest.attributeTypeMap;
+        return GetProductRequest.attributeTypeMap;
     }
 }
 

@@ -6,9 +6,11 @@ export * from './concurrencyError';
 export * from './createCheckoutRequest';
 export * from './createCheckoutResponse';
 export * from './createCustomerPortalSessionRequest';
-export * from './createUserReq';
+export * from './createUserRequest';
 export * from './emoji';
 export * from './getEmojiRequest';
+export * from './getProductRequest';
+export * from './getProductResponse';
 export * from './getUserRequest';
 export * from './internalServerError';
 export * from './referralSummary';
@@ -36,9 +38,11 @@ import { ConcurrencyError } from './concurrencyError';
 import { CreateCheckoutRequest } from './createCheckoutRequest';
 import { CreateCheckoutResponse } from './createCheckoutResponse';
 import { CreateCustomerPortalSessionRequest } from './createCustomerPortalSessionRequest';
-import { CreateUserReq } from './createUserReq';
+import { CreateUserRequest } from './createUserRequest';
 import { Emoji } from './emoji';
 import { GetEmojiRequest } from './getEmojiRequest';
+import { GetProductRequest } from './getProductRequest';
+import { GetProductResponse } from './getProductResponse';
 import { GetUserRequest } from './getUserRequest';
 import { InternalServerError } from './internalServerError';
 import { ReferralSummary } from './referralSummary';
@@ -69,9 +73,11 @@ let typeMap: {[index: string]: any} = {
     "CreateCheckoutRequest": CreateCheckoutRequest,
     "CreateCheckoutResponse": CreateCheckoutResponse,
     "CreateCustomerPortalSessionRequest": CreateCustomerPortalSessionRequest,
-    "CreateUserReq": CreateUserReq,
+    "CreateUserRequest": CreateUserRequest,
     "Emoji": Emoji,
     "GetEmojiRequest": GetEmojiRequest,
+    "GetProductRequest": GetProductRequest,
+    "GetProductResponse": GetProductResponse,
     "GetUserRequest": GetUserRequest,
     "InternalServerError": InternalServerError,
     "ReferralSummary": ReferralSummary,

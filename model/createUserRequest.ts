@@ -12,16 +12,21 @@
 
 import { RequestFile } from './models';
 
-export class CreateCheckoutRequest {
+export class CreateUserRequest {
     /**
     * Stringified UUIDv4. See [RFC 4112](https://tools.ietf.org/html/rfc4122)
     */
     'userId': string;
     /**
-    * Stripe Product Id.
+    * Stringified Email.
     */
-    'productId': string;
-    'promoCodeId'?: string;
+    'email': string;
+    'username': string;
+    'referrerUserId'?: string;
+    /**
+    * signed integer of number as timezone 0 = UTC+00:00 ; 480 = UTC+08:00 ; -180 = UTC-03:00 ... etc. global ranging from UTC-12:00 to UTC+14:00. (i.e. -720 ~ +840)
+    */
+    'timezone'?: number;
 
     static discriminator: string | undefined = undefined;
 
@@ -32,18 +37,28 @@ export class CreateCheckoutRequest {
             "type": "string"
         },
         {
-            "name": "productId",
-            "baseName": "productId",
+            "name": "email",
+            "baseName": "email",
             "type": "string"
         },
         {
-            "name": "promoCodeId",
-            "baseName": "promoCodeId",
+            "name": "username",
+            "baseName": "username",
             "type": "string"
+        },
+        {
+            "name": "referrerUserId",
+            "baseName": "referrerUserId",
+            "type": "string"
+        },
+        {
+            "name": "timezone",
+            "baseName": "timezone",
+            "type": "number"
         }    ];
 
     static getAttributeTypeMap() {
-        return CreateCheckoutRequest.attributeTypeMap;
+        return CreateUserRequest.attributeTypeMap;
     }
 }
 

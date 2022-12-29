@@ -16,14 +16,14 @@ export class GetUserRequest {
     /**
     * Stringified UUIDv4. See [RFC 4112](https://tools.ietf.org/html/rfc4122)
     */
-    'id': string;
+    'userId': string;
 
     static discriminator: string | undefined = undefined;
 
     static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
         {
-            "name": "id",
-            "baseName": "id",
+            "name": "userId",
+            "baseName": "userId",
             "type": "string"
         }    ];
 

@@ -14,9 +14,11 @@ model/concurrencyError.ts
 model/createCheckoutRequest.ts
 model/createCheckoutResponse.ts
 model/createCustomerPortalSessionRequest.ts
-model/createUserReq.ts
+model/createUserRequest.ts
 model/emoji.ts
 model/getEmojiRequest.ts
+model/getProductRequest.ts
+model/getProductResponse.ts
 model/getUserRequest.ts
 model/internalServerError.ts
 model/models.ts

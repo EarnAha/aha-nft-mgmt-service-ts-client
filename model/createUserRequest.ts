@@ -22,6 +22,9 @@ export class CreateUserRequest {
     */
     'email': string;
     'username': string;
+    /**
+    * Stringified UUIDv4. See [RFC 4112](https://tools.ietf.org/html/rfc4122)
+    */
     'referrerUserId'?: string;
     /**
     * signed integer of number as timezone 0 = UTC+00:00 ; 480 = UTC+08:00 ; -180 = UTC-03:00 ... etc. global ranging from UTC-12:00 to UTC+14:00. (i.e. -720 ~ +840)

@@ -212,6 +212,9 @@ export class StripeApi {
         };
 
         let authenticationPromise = Promise.resolve();
+        if (this.authentications.JWT.accessToken) {
+            authenticationPromise = authenticationPromise.then(() => this.authentications.JWT.applyToRequest(localVarRequestOptions));
+        }
         authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
 
         let interceptorPromise = authenticationPromise;

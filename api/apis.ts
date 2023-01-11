@@ -4,6 +4,8 @@ export * from './defaultApi';
 import { DefaultApi } from './defaultApi';
 export * from './emojiApi';
 import { EmojiApi } from './emojiApi';
+export * from './promoCodeApi';
+import { PromoCodeApi } from './promoCodeApi';
 export * from './stripeApi';
 import { StripeApi } from './stripeApi';
 export * from './userApi';
@@ -19,4 +21,4 @@ export class HttpError extends Error {
 
 export { RequestFile } from '../model/models';
 
-export const APIS = [AsyncApi, DefaultApi, EmojiApi, StripeApi, UserApi];
+export const APIS = [AsyncApi, DefaultApi, EmojiApi, PromoCodeApi, StripeApi, UserApi];

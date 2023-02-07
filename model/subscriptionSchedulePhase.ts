@@ -192,3 +192,5 @@ export class SubscriptionSchedulePhase {
     }
 }
 
+export namespace SubscriptionSchedulePhase {
+}

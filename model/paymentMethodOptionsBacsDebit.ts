@@ -30,3 +30,5 @@ export class PaymentMethodOptionsBacsDebit {
     }
 }
 
+export namespace PaymentMethodOptionsBacsDebit {
+}

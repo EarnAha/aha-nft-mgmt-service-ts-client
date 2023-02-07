@@ -133,3 +133,5 @@ export class StripePaymentIntentLastPaymentError {
     }
 }
 
+export namespace StripePaymentIntentLastPaymentError {
+}

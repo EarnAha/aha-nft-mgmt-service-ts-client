@@ -30,3 +30,5 @@ export class CashBalanceSettings {
     }
 }
 
+export namespace CashBalanceSettings {
+}

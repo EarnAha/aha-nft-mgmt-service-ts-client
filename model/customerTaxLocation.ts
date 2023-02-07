@@ -51,3 +51,5 @@ export class CustomerTaxLocation {
     }
 }
 
+export namespace CustomerTaxLocation {
+}

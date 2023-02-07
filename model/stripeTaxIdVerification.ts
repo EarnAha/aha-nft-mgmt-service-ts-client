@@ -51,3 +51,5 @@ export class StripeTaxIdVerification {
     }
 }
 
+export namespace StripeTaxIdVerification {
+}

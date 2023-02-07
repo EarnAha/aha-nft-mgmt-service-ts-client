@@ -64,3 +64,5 @@ export class ComputedRecurring {
     }
 }
 
+export namespace ComputedRecurring {
+}

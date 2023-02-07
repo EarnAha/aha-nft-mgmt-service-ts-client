@@ -39,3 +39,5 @@ export class SubscriptionPendingInvoiceItemInterval {
     }
 }
 
+export namespace SubscriptionPendingInvoiceItemInterval {
+}

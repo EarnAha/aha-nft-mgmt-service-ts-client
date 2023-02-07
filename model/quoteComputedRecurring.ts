@@ -67,3 +67,5 @@ export class QuoteComputedRecurring {
     }
 }
 
+export namespace QuoteComputedRecurring {
+}

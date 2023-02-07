@@ -40,3 +40,5 @@ export class PaymentMethodOptionsSofort {
     }
 }
 
+export namespace PaymentMethodOptionsSofort {
+}

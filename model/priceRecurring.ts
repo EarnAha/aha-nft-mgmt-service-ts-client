@@ -65,3 +65,5 @@ export class PriceRecurring {
     }
 }
 
+export namespace PriceRecurring {
+}

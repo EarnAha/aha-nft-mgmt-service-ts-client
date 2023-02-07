@@ -76,3 +76,5 @@ export class NextActionDisplayBankTransferInstructions {
     }
 }
 
+export namespace NextActionDisplayBankTransferInstructions {
+}

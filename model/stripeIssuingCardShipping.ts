@@ -128,3 +128,5 @@ export class StripeIssuingCardShipping {
     }
 }
 
+export namespace StripeIssuingCardShipping {
+}

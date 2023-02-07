@@ -46,3 +46,5 @@ export class CustomerTax {
     }
 }
 
+export namespace CustomerTax {
+}

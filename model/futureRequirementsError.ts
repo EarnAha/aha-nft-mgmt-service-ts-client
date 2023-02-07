@@ -48,3 +48,5 @@ export class FutureRequirementsError {
     }
 }
 
+export namespace FutureRequirementsError {
+}

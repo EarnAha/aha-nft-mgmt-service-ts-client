@@ -105,3 +105,5 @@ export class PaymentMethodDetailsInteracPresentReceipt {
     }
 }
 
+export namespace PaymentMethodDetailsInteracPresentReceipt {
+}

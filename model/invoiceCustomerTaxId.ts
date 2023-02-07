@@ -39,3 +39,5 @@ export class InvoiceCustomerTaxId {
     }
 }
 
+export namespace InvoiceCustomerTaxId {
+}

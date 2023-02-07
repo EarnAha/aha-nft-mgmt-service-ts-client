@@ -130,3 +130,5 @@ export class InvoiceLastFinalizationError {
     }
 }
 
+export namespace InvoiceLastFinalizationError {
+}

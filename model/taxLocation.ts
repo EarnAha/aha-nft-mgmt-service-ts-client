@@ -48,3 +48,5 @@ export class TaxLocation {
     }
 }
 
+export namespace TaxLocation {
+}

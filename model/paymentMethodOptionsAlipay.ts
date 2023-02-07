@@ -30,3 +30,5 @@ export class PaymentMethodOptionsAlipay {
     }
 }
 
+export namespace PaymentMethodOptionsAlipay {
+}

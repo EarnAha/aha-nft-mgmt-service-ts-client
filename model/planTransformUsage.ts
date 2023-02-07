@@ -39,3 +39,5 @@ export class PlanTransformUsage {
     }
 }
 
+export namespace PlanTransformUsage {
+}

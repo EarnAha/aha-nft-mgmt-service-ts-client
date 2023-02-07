@@ -100,3 +100,5 @@ export class AuthorizationRequestHistory {
     }
 }
 
+export namespace AuthorizationRequestHistory {
+}

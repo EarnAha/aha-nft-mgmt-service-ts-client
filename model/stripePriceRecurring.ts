@@ -68,3 +68,5 @@ export class StripePriceRecurring {
     }
 }
 
+export namespace StripePriceRecurring {
+}

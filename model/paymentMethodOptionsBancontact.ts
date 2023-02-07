@@ -30,3 +30,5 @@ export class PaymentMethodOptionsBancontact {
     }
 }
 
+export namespace PaymentMethodOptionsBancontact {
+}

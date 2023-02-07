@@ -68,3 +68,5 @@ export class DisplayBankTransferInstructionsFinancialAddress {
     }
 }
 
+export namespace DisplayBankTransferInstructionsFinancialAddress {
+}

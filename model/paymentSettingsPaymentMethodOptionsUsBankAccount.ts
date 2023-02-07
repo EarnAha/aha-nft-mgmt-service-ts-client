@@ -40,3 +40,5 @@ export class PaymentSettingsPaymentMethodOptionsUsBankAccount {
     }
 }
 
+export namespace PaymentSettingsPaymentMethodOptionsUsBankAccount {
+}

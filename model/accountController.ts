@@ -39,3 +39,5 @@ export class AccountController {
     }
 }
 
+export namespace AccountController {
+}

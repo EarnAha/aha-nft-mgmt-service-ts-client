@@ -130,3 +130,5 @@ export class SetupAttemptSetupError {
     }
 }
 
+export namespace SetupAttemptSetupError {
+}

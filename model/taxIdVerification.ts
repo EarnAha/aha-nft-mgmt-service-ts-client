@@ -48,3 +48,5 @@ export class TaxIdVerification {
     }
 }
 
+export namespace TaxIdVerification {
+}

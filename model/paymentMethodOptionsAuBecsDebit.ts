@@ -30,3 +30,5 @@ export class PaymentMethodOptionsAuBecsDebit {
     }
 }
 
+export namespace PaymentMethodOptionsAuBecsDebit {
+}

@@ -42,3 +42,5 @@ export class StripeSubscriptionPauseCollection {
     }
 }
 
+export namespace StripeSubscriptionPauseCollection {
+}

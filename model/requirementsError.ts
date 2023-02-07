@@ -48,3 +48,5 @@ export class RequirementsError {
     }
 }
 
+export namespace RequirementsError {
+}

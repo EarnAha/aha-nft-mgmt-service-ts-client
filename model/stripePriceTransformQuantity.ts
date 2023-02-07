@@ -42,3 +42,5 @@ export class StripePriceTransformQuantity {
     }
 }
 
+export namespace StripePriceTransformQuantity {
+}

@@ -42,3 +42,5 @@ export class StripePlanTransformUsage {
     }
 }
 
+export namespace StripePlanTransformUsage {
+}

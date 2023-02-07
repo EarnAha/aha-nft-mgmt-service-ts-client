@@ -39,3 +39,5 @@ export class PaymentMethodOptionsBoleto {
     }
 }
 
+export namespace PaymentMethodOptionsBoleto {
+}

@@ -40,3 +40,5 @@ export class PaymentMethodFpx {
     }
 }
 
+export namespace PaymentMethodFpx {
+}

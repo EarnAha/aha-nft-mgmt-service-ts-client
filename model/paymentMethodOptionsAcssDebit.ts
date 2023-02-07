@@ -47,3 +47,5 @@ export class PaymentMethodOptionsAcssDebit {
     }
 }
 
+export namespace PaymentMethodOptionsAcssDebit {
+}

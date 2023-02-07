@@ -155,3 +155,5 @@ export class AccountCompany {
     }
 }
 
+export namespace AccountCompany {
+}

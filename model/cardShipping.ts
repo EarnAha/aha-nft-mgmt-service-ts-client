@@ -125,3 +125,5 @@ export class CardShipping {
     }
 }
 
+export namespace CardShipping {
+}

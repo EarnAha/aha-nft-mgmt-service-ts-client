@@ -52,3 +52,5 @@ export class MandateCustomerAcceptance {
     }
 }
 
+export namespace MandateCustomerAcceptance {
+}

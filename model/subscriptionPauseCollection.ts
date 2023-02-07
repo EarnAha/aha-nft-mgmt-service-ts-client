@@ -39,3 +39,5 @@ export class SubscriptionPauseCollection {
     }
 }
 
+export namespace SubscriptionPauseCollection {
+}

@@ -49,3 +49,5 @@ export class SpendingControlsSpendingLimit {
     }
 }
 
+export namespace SpendingControlsSpendingLimit {
+}

@@ -261,3 +261,5 @@ export class AccountCapabilities {
     }
 }
 
+export namespace AccountCapabilities {
+}

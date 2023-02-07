@@ -130,3 +130,5 @@ export class SetupIntentLastSetupError {
     }
 }
 
+export namespace SetupIntentLastSetupError {
+}

@@ -51,3 +51,5 @@ export class AuthorizationVerificationData {
     }
 }
 
+export namespace AuthorizationVerificationData {
+}

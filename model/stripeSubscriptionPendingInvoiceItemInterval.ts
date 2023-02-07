@@ -42,3 +42,5 @@ export class StripeSubscriptionPendingInvoiceItemInterval {
     }
 }
 
+export namespace StripeSubscriptionPendingInvoiceItemInterval {
+}

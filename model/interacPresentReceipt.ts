@@ -102,3 +102,5 @@ export class InteracPresentReceipt {
     }
 }
 
+export namespace InteracPresentReceipt {
+}

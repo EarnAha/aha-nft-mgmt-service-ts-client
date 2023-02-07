@@ -130,3 +130,5 @@ export class PaymentIntentLastPaymentError {
     }
 }
 
+export namespace PaymentIntentLastPaymentError {
+}

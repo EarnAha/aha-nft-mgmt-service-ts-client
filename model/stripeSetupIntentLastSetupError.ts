@@ -133,3 +133,5 @@ export class StripeSetupIntentLastSetupError {
     }
 }
 
+export namespace StripeSetupIntentLastSetupError {
+}
